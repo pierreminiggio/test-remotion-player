@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Player } from '@remotion/player'
+import { HelloWorld } from '@pierreminiggio/remotion-test-github-action/src/HelloWorld';
 
 function App() {
   return (
@@ -19,6 +21,17 @@ function App() {
           Learn React
         </a>
       </header>
+      <Player
+        component={HelloWorld}
+        durationInFrames={150}
+        fps={30}
+        width={1920}
+        height={1080}
+        inputProps={{
+          titleText: 'Welcome to Remotion',
+          titleColor: 'black',
+        }}
+      />
     </div>
   );
 }
