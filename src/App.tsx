@@ -1,4 +1,3 @@
-import './App.css';
 import { Player } from '@remotion/player'
 import { HelloWorld } from '@pierreminiggio/remotion-test-github-action/dist/HelloWorld.js';
 
