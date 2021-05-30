@@ -25,8 +25,8 @@ function App() {
         component={HelloWorld}
         durationInFrames={150}
         fps={30}
-        width={1920}
-        height={1080}
+        compositionWidth={1920}
+        compositionHeight={1080}
         inputProps={{
           titleText: 'Welcome to Remotion',
           titleColor: 'black',
