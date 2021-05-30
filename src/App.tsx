@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Player } from '@remotion/player'
-import { HelloWorld } from '@pierreminiggio/remotion-test-github-action/src/HelloWorld';
+import { HelloWorld } from '@pierreminiggio/remotion-test-github-action/dist/HelloWorld.js';
 
 function App() {
   return (
