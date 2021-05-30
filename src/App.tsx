@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Player } from '@remotion/player'
 import { HelloWorld } from '@pierreminiggio/remotion-test-github-action/dist/HelloWorld.js';
@@ -7,30 +5,18 @@ import { HelloWorld } from '@pierreminiggio/remotion-test-github-action/dist/Hel
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
       <Player
         component={HelloWorld}
         durationInFrames={150}
         fps={30}
-        compositionWidth={1920}
-        compositionHeight={1080}
+        compositionWidth={1280}
+        compositionHeight={720}
+        loop={true}
         inputProps={{
           titleText: 'Welcome to Remotion',
           titleColor: 'black',
         }}
+        style={{border: '1px black solid'}}
       />
     </div>
   );
